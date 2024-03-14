@@ -63,7 +63,7 @@ function getFormattedCredentials() {
 }
 
 const handleLogin = () => {
-    axios.post('http://127.0.0.1:80/api/login', getFormattedCredentials())
+    axios.post('http://localhost/api/login', getFormattedCredentials())
         .then((response)=>{
             console.log(response.data)
             waitingOnVerification.value = true
@@ -76,7 +76,7 @@ const handleLogin = () => {
 }
 
 const handleVerification = () => {
-    axios.post('http://127.0.0.1:80/api/login/verify', getFormattedCredentials())
+    axios.post('http://localhost/api/login/verify', getFormattedCredentials())
         .then((response) => {
             console.log(response.data) // auth token
             localStorage.setItem('token',response.data)
@@ -92,7 +92,3 @@ const handleVerification = () => {
 
 
 </script>
-
-<style>
-
-</style>

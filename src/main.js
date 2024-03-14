@@ -15,9 +15,13 @@ app.use(router)
 
 app.use(VueGoogleMaps, {
     load: {
-        key: 'AIzaSyA29trg0O6CykKZuGy95tq4wWp75pCkNdA',
+        key: 'AIzaSyCAqdwRPpTtDGc6lWZKlSO0EPgkAKRo-8o',
         libraries: 'places'
     }
 })
 
 app.mount('#app')
+
+
+// test API key : AIzaSyCAqdwRPpTtDGc6lWZKlSO0EPgkAKRo-8o
+// my API key : AIzaSyBfV4WyOGW7v79likTLWas_bAHyG5ddymk
